@@ -1,0 +1,111 @@
+{% extends 'layout.html' %} {% block title %}  Classification Status {% endblock %} {% block body
+    %}
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <h2 class="text-center fw-bolder txt-head">Classification Status</h2>
+            <hr class="my-4">
+            <h4 class="text-center">
+              Calculation model matrix
+            </4>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row justify-content-center">
+            
+            
+        </div>
+<hr/>
+
+    <div class="row d-sm-flex mt-2">
+        <div class="col-md-6 mt-3">
+            <div class="card text-black text-left " style="max-width: 100%">
+                <h5 class="card-header p-3">Feature Description
+                </h5>
+                <div class="card-body">
+                    <table class="table table-hover table-responsive table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">Matrix</th>
+                            <th scope="col">Score</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+
+                          <tr>
+                            <td>Accurcy</td>
+                            <td>0.81</td>
+
+                          </tr>
+                          <tr>
+                            <td>Precision</td>
+                            <td>0.65</td>
+
+                          </tr>
+                          <tr>
+                            <td>Recall</td>
+                            <td>0.33</td>
+                          </tr>
+                          
+                          <tr>
+                            <td>F1</td>
+                            <td>0.43</td>
+
+                          </tr>
+                          <tr>
+                            <td>PR_AUC</td>
+                            <td>0.49</td>
+
+                          </tr>
+                          <tr>
+                            <td>ROC_AUC</td>
+                            <td>0.63</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mt-3">
+          <div class="card text-black text-left " style="max-width: 100%">
+              <h5 class="card-header p-3">Confussion Matrix
+              </h5>
+              <div class="card-body">
+                  <img src="{{url_for('static', filename='assets/images/confuss.png')}}" class="card-img-top" alt="..." width="100%" />
+              </div>
+          </div>
+      </div>
+
+        </div>
+
+
+        <div class="row d-sm-flex mt-2">
+          <div class="col-md-6 mt-3">
+            <div class="card text-black text-left " style="max-width: 100%">
+                <h5 class="card-header p-3">PR AUC Graph
+                </h5>
+                <div class="card-body">
+                    <img src="{{url_for('static', filename='assets/images/pr_curve.png')}}" class="card-img-top" alt="..." width="100%" />
+                </div>
+            </div>
+        </div>
+          
+          <div class="col-md-6 mt-3">
+            <div class="card text-black text-left " style="max-width: 100%">
+                <h5 class="card-header p-3">ROC AUC Graph
+                </h5>
+                <div class="card-body">
+                    <img src="{{url_for('static', filename='assets/images/roc_curve.png')}}" class="card-img-top" alt="..." width="100%" />
+                </div>
+            </div>
+        </div>
+  
+          </div>
+
+</div>
+{% include 'includes/_footer.html' %}
+    {% endblock %}
+    

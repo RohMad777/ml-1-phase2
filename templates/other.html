@@ -1,0 +1,62 @@
+{% extends 'layout.html' %} {% block title %} Other Projects {% endblock %} {% block body
+    %}
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <h2 class="text-center fw-bolder txt-head">Other Projects</h2>
+            <hr class="my-4">
+            <h4 class="text-center">
+              Other projects during phase 0 to phase 1 </4>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row justify-content-center">
+            
+            
+        </div>
+<hr/>
+
+<div class="card">
+  <h4 class="card-header p-3">Other Projects
+  </h4>
+  <div class="card-body">
+    <div class="row d-sm-flex mt-2">
+      <div class="col-md-4 mt-3">
+          <div class="card text-black text-left" style="max-width: 30rem">
+              <h5 class="card-header">
+              Milestone 1
+              </h5>
+              <img src="{{url_for('static', filename='assets/images/milestone1.jpg')}}" class="card-img-top" alt="..." width="100%" />
+              <div class="card-body">
+                  <p class="card-text">
+                      Projects about dashboard selling market
+                  </p>
+                  <a href="https://rohmad-batch001.herokuapp.com/" class="card-link links" target="_blank">Visit site</a>
+
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mt-3"></div>
+      <div class="col-md-4 mt-3">
+          <div class="card text-black text-left " style="max-width: 30rem">
+              <h5 class="card-header">
+                  Milestone 2
+              </h5>
+              <img src="{{url_for('static', filename='assets/images/milestone2.png')}}" class="card-img-top" alt="..." width="100%" />
+              <div class="card-body">
+                  <p class="card-text">
+                      Projects about predicted bank marketing sales
+                  </p>
+                  <a href="https://model-rohmad-app.herokuapp.com/" class="card-link links" target="_blank">Visit site</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+</div>
+        
+    </div>
+</div>
+{% include 'includes/_footer.html' %}
+    {% endblock %}
+    

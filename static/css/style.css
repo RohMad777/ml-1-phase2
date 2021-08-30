@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Staatliches&display=swap');
+
+.carousel-item {
+    height: 400px;
+}
+
+.carousel-item img {
+    height: 400px;
+}
+
+
+.footers {
+    font-family: 'Dancing Script', cursive;
+}
+
+.txt-head {
+    font-family: 'Staatliches', cursive;
+}
+
+.links {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+
+.nav-tabs .nav-link {
+    background-color: rgb(243, 236, 236);
+    color: #0080FF;
+    width: 200px;
+    border: 1px solid #dee2e6;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #0080FF;
+    color: #FFF;
+    width: 200px;
+}
+
+.tab-content {
+    border: 1px solid #dee2e6;
+    border-top: transparent;
+    padding: 15px;
+}
+
+.tab-content .tab-pane {
+    background-color: #FFF;
+    min-height: 200px;
+    height: auto;
+}
+
+.blues {
+    color: #0080FF;
+}
