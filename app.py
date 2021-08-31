@@ -24,7 +24,7 @@ def predict():
 
     return render_template("predict.html",
                            prediction_text="{}".format(output[(int(
-                               math.ceil(prediction[0][0])))]))
+                               math.floor(prediction[0][0])))]))
 
 
 @app.route('/data-set')
